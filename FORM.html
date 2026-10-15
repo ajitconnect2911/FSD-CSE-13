@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Faculty Registration Form</h1>
+
+    <form>
+
+        <!-- Faculty Name -->
+        <label for="name">Faculty Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter faculty name"
+            required
+        >
+
+        <br><br>
+
+        <!-- Faculty ID -->
+        <label for="facultyId">Faculty ID:</label>
+        <input
+            type="text"
+            id="facultyId"
+            name="facultyId"
+            placeholder="Enter faculty ID"
+            required
+        >
+
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+            required
+        >
+
+        <br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter phone number"
+        >
+
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            required
+        >
+
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input
+            type="date"
+            id="dob"
+            name="dob"
+        >
+
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+        >
+        <label for="male">Male</label>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+        >
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <!-- Department -->
+        <label for="department">Department:</label>
+
+        <select id="department" name="department">
+
+            <option value="">Select Department</option>
+            <option value="cse">Computer Science</option>
+            <option value="it">Information Technology</option>
+            <option value="ece">Electronics</option>
+            <option value="mechanical">Mechanical</option>
+            <option value="civil">Civil</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Qualification -->
+        <label for="qualification">Highest Qualification:</label>
+
+        <select id="qualification" name="qualification">
+
+            <option value="">Select Qualification</option>
+            <option value="btech">B.Tech</option>
+            <option value="mtech">M.Tech</option>
+            <option value="phd">Ph.D</option>
+            <option value="msc">M.Sc</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Subjects -->
+        <label>Subjects You Can Teach:</label>
+
+        <input
+            type="checkbox"
+            id="web"
+            name="subjects"
+            value="web-development"
+        >
+        <label for="web">Web Development</label>
+
+        <input
+            type="checkbox"
+            id="java"
+            name="subjects"
+            value="java"
+        >
+        <label for="java">Java</label>
+
+        <input
+            type="checkbox"
+            id="cpp"
+            name="subjects"
+            value="cpp"
+        >
+        <label for="cpp">C++</label>
+
+        <br><br>
+
+        <!-- Experience -->
+        <label for="experience">Teaching Experience:</label>
+        <input
+            type="number"
+            id="experience"
+            name="experience"
+            placeholder="Years of experience"
+        >
+
+        <br><br>
+
+        <!-- Photo -->
+        <label for="photo">Upload Faculty Photo:</label>
+        <input
+            type="file"
+            id="photo"
+            name="photo"
+        >
+
+        <br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <br>
+
+        <textarea
+            id="address"
+            name="address"
+            rows="4"
+            cols="30"
+            placeholder="Enter your address"
+        ></textarea>
+
+        <br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Register">
+
+        <!-- Reset -->
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
